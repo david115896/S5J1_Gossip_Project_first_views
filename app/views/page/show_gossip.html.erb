@@ -23,7 +23,7 @@
 		<p class="lead"><%= @gossip.content %></p>
 		<hr class="my-4">
 			<p>Ce gossip a ete ecrit par <%= @gossip.user.first_name %>, le <%= @gossip.created_at %></p>
-			<a class="btn btn-primary btn-lg" href="/show_user/<%= @gossip.user.id %>" role="button">Afficher la page de l'autheur</a>
+			<a class="btn btn-primary btn-lg" href="/show_user/<%= @gossip.user.id %>" role="button">Afficher la page de l'auteur</a>
 		</hr>
 	</div>
 </section>

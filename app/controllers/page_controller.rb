@@ -7,7 +7,7 @@ class PageController < ApplicationController
 	end
 
 	def show_gossip
-		puts @gossip = Gossip.find(params[:gossip_id])
+		@gossip = Gossip.find(params[:gossip_id])
 
 	end
 
