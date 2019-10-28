@@ -1,0 +1,29 @@
+<!-- Masthead -->
+<header class="masthead bg-primary text-white text-center">
+	<div class="container d-flex align-items-center flex-column">
+		<!-- Masthead Heading -->
+		<h1 class="masthead-heading text-uppercase mb-0"> Fiche du Gossip</h1>
+	</div>
+</header>
+<!-- Portfolio Section -->
+<section class="page-section portfolio" id="portfolio">
+	<div class="container">
+		<!-- Portfolio Section Heading -->
+		<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gossip :  <%= "#{@gossip.title}" %> </p></h2>
+		<!-- Icon Divider -->
+		<div class="divider-custom">
+		        <div class="divider-custom-line"></div>
+	        <div class="divider-custom-icon">
+        		<i class="fas fa-star"></i>
+	        </div>
+        		<div class="divider-custom-line"></div>
+      </div>
+
+	<div class="jumbotron">
+		<p class="lead"><%= @gossip.content %></p>
+		<hr class="my-4">
+			<p>Ce gossip a ete ecrit par <%= @gossip.user.first_name %>, le <%= @gossip.created_at %></p>
+			<a class="btn btn-primary btn-lg" href="/show_user/<%= @gossip.user.id %>" role="button">Afficher la page de l'autheur</a>
+		</hr>
+	</div>
+</section>

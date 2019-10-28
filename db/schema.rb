@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_10_28_105148) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
-    t.string "zop_code"
+    t.string "zip_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
